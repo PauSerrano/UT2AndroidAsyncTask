@@ -3,10 +3,44 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:gravity="center">
+    android:gravity="center"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvProgreso1"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="0 de 100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPorcentaje"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:paddingRight="10dp"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="100"
+        android:visibility="visible" />
 
     <Button
-        android:text="Descargar"
+        android:text="boton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/botonDescarga"
